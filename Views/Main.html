@@ -5,14 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Start Styles-->
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="../Controllers/bootstrap.min.css">
     <link rel="stylesheet" href="MainStyle.css">
     <title>Spets</title>
 </head>
 <body>
     <header>
         <!--Acá colocar el carrusel de publicidades con boostrap-->
-        s
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/1140-cat-and-dog-napping-outside-esp.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/f.elconfidencial.com_original_dc7_fe3_699_dc7fe36993e0acebced493ae68c33d77.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/mascota-espana-blanca-1024x639.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/mascotas-perros-gatos_515959375_158488465_1706x960.jpg" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+        </div>
     </header>
 
     <div class="container">
@@ -22,7 +41,7 @@
             <a href="">Actividades</a>
             <a href="">Medidas de precaución</a>
             <a href="">Sección mascotas</a>
-            <a href="">Iniciar sesión</a>
+            <button>Iniciar sesión</button>
         </nav>
     </div>
 
@@ -59,7 +78,13 @@
         <!-- Colocar acá cómo pueden ayudar a uno de manera profesional, tanto las notas de apoyo como las ubicaciones de l@s profesionales cercan@s -->
     </section>
     
+    <footer>
+        <div>
+            <p>&copy; Spets 2022</p>
+        </div>
+    </footer>
 
+    <script src="../Controllers/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

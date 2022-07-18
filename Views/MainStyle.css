@@ -1,17 +1,17 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-}
+} */
 
 /* Sección de la barra de navegación */
 
-.header #navbar {
+#navbar {
   background-color: #f8b131;
 }
-
+/* 
 .medio-circulo {
   width: 5em;
   height: 4em;
@@ -26,11 +26,11 @@ body {
 .medio-circulo h4 {
   text-align: center;
   margin-top: 0.8em;
-}
+} */
 
 /* Sección del carrousel */
 
-.carousel-inner img {
+/* .carousel-inner img {
   width: 100%;
   max-height: 20em;
-}
+} */

@@ -15,187 +15,193 @@
 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Spets</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Controllers/bootstrap.min.css" crossorigin="anonymous"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../Controllers/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="MainStyle.css" />
+    <script src="https://kit.fontawesome.com/62ea397d3a.js"></script>
   </head>
   <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toogle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- NAVBAR-->
+    <header>
+      <nav class="navbar navbar-expand-md" id="navbar">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Actividades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Medidas de precaución</a>
-            </li>
-            <li class="nav-item"  id="NavBar-space">
-              <!-- Se coloca logo o icono de Spets -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tus mascotas</a>
-            </li>
-            <li class="nav-item">
-              <button class="nav-link">Iniciar sesión</button>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <icon>Lenguaje</icon>
-              </a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <div class="caja-izq">
+                <div>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Inicio</a
+                    >
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Actividades</a>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Medidas de precaución</a>
+                  </li>
+                </div>
+              </div>
+              <div class="caja-der">
+                <div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tus mascotas</a>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item">
+                    <button class="nav-link" href="#">Iniciar sesión</button>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="nav-link" class="fa-solid fa-language"
+                        >Idioma</i
+                      >
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- Logo central -->
+    <nav class="navbar sticky-top">
+      <div class="medio-circulo">
+        <a href="">
+          <h4>Spets</h4>
+        </a>
       </div>
     </nav>
-    
-    <!-- Icon Center -->
-    <!-- <div class="medio-circulo">
-        <h4>Spets</h4>
-    </div> -->
+
+    <!-- Carrousel -->
 
     <div id="boostrap-carrousel">
-        <div id="carouselid" class="carousel slide" data-bs-ride="carousel">
-          <!-- Agrega diapositivas al carrousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                src="./Images/1140-cat-and-dog-napping-outside-esp.jpg"
-                alt=""
-                class="d-block w-100"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./Images/f.elconfidencial.com_original_dc7_fe3_699_dc7fe36993e0acebced493ae68c33d77.jpg"
-                alt=""
-                class="d-block w-100 h-10"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./Images/mascota-espana-blanca-1024x639.jpg"
-                alt=""
-                class="d-block w-100"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./Images/mascotas-perros-gatos_515959375_158488465_1706x960.jpg"
-                alt=""
-                class="d-block w-100"
-              />
-            </div>
+      <div id="carouselid" class="carousel slide" data-bs-ride="carousel">
+        <!-- Agrega diapositivas al carrousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="./Images/1140-cat-and-dog-napping-outside-esp.jpg"
+              alt=""
+              class="d-block w-100"
+            />
           </div>
-          <!-- Botones para pasar de izquierda a derecha -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselid"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselid"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <!--Indicadores-->
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselid"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselid"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselid"
-              data-bs-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselid"
-              data-bs-slide-to="3"
-            ></button>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./Images/f.elconfidencial.com_original_dc7_fe3_699_dc7fe36993e0acebced493ae68c33d77.jpg"
+              alt=""
+              class="d-block w-100 h-10"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./Images/mascota-espana-blanca-1024x639.jpg"
+              alt=""
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./Images/mascotas-perros-gatos_515959375_158488465_1706x960.jpg"
+              alt=""
+              class="d-block w-100"
+            />
           </div>
         </div>
-      </header>
+        <!-- Botones para pasar de izquierda a derecha -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselid"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselid"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!--Indicadores-->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselid"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselid"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselid"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselid"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+      </div>
     </div>
 
-    <section id="hero">
-      <h1>
-        Busca, aprende y ten una mejor calidad de vida con tu mascota junto a
-        Spets
-      </h1>
-    </section>
-
-    <section id="Pets">
-      <!-- Colocar también una descripción detallada de cómo sería el perfil de las personas con sus mascotas, etc -->
-      <h1 id="Line">Mascotas</h1>
-      <div class="container">
-        <img src="" alt="" />
-        <h3>Mascota1</h3>
-      </div>
-      <div class="container">
-        <img src="" alt="" />
-        <h3>Mascota2</h3>
-      </div>
-      <div class="container">
-        <img src="" alt="" />
-        <h3>Mascota3</h3>
-      </div>
-      <div class="container">
-        <img src="" alt="" />
-        <h3>Mascota4</h3>
-      </div>
-    </section>
-
-    <section id="EncountersAndActivities">
-      <!-- Colocar acá imágenes sobre el foro -->
-    </section>
-
-    <section id="Professional_Help">
-      <!-- Colocar acá cómo pueden ayudar a uno de manera profesional, tanto las notas de apoyo como las ubicaciones de l@s profesionales cercan@s -->
-    </section>
-
-    <!-- <footer>
-      <div>
-        <p>&copy; Spets 2022</p>
-      </div>
-    </footer> -->
-
-    <script src="../Controllers/popper.min.js"></script>
-    <script src="../Controllers/bootstrap.min.js"></script>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        blanditiis dolores, perferendis non aliquid numquam ducimus repudiandae
+        ipsa voluptate! Facere ad iste vitae magnam adipisci debitis pariatur
+        esse et doloremque!Lorem
+      </p>
+    </div>
+    <!-- Archivos js -->
+    <script
+      src="../Controllers/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../Controllers/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
     <script src="../Controllers/bootstrap.bundle.min.js"></script>
   </body>
 </html>

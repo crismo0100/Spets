@@ -11,25 +11,25 @@ body {
   background-color: #f8b131;
 }
 
-.navbar-nav {
-  width: 100%;
-}
-
 .caja-izq {
   width: 100%;
-  display: flex;
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
   margin-right: 1em;
 }
 
 .caja-der {
   width: 100%;
-  display: flex;
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
+
+.one {
+  justify-content: space-evenly;
+}
+
+.two {
+  justify-content: space-evenly;
+}
+
+/* Circulo */
 
 .sticky-top {
   padding: 0;
